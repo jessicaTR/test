@@ -9,6 +9,7 @@ public class Main {
             System.exit(0);
         } else {
             System.out.println("Hello maven");
+            //1
         }
     }
 
