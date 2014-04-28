@@ -1,4 +1,5 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
 	<!--parent> <groupId>com.pointcarbon</groupId> <artifactId>pointcarbon-pom</artifactId> 
@@ -10,16 +11,12 @@
 	<packaging>jar</packaging>
 	<name>Esb :: App :: Example</name>
 
-	<!-- properties>
-		<github.global.server>github</github.global.server>
-	</properties-->
-	<!-- scm>
-		<developerConnection>scm:git:ssh://git@github.com/wangxiaoming2/test.git</developerConnection>
-		<connection>scm:git:ssh://git@github.com/wangxiaoming2/test.git</connection>
-		<url>https://github.com/wangxiaoming2/test.git</url>
-		<tag>esb-app-example-1.0.1</tag>
-	</scm-->
-	
+	<!-- properties> <github.global.server>github</github.global.server> </properties -->
+	<!-- scm> <developerConnection>scm:git:ssh://git@github.com/wangxiaoming2/test.git</developerConnection> 
+		<connection>scm:git:ssh://git@github.com/wangxiaoming2/test.git</connection> 
+		<url>https://github.com/wangxiaoming2/test.git</url> <tag>esb-app-example-1.0.1</tag> 
+		</scm -->
+
 	<scm>
 		<developerConnection>scm:git:https://github.com/wangxiaoming2/test.git</developerConnection>
 		<connection>scm:git:https://github.com/wangxiaoming2/test.git</connection>
@@ -45,22 +42,10 @@
 			<id>release</id>
 			<build>
 				<plugins>
-					<!-- plugin>
-						<groupId>com.github.github</groupId>
-						<artifactId>site-maven-plugin</artifactId>
-						<version>0.8</version>
-						<configuration>
-							<message>Creating site for ${project.version}</message>
-						</configuration>
-						<executions>
-							<execution>
-								<goals>
-									<goal>site</goal>
-								</goals>
-								<phase>site</phase>
-							</execution>
-						</executions>
-					</plugin-->
+					<!-- plugin> <groupId>com.github.github</groupId> <artifactId>site-maven-plugin</artifactId> 
+						<version>0.8</version> <configuration> <message>Creating site for ${project.version}</message> 
+						</configuration> <executions> <execution> <goals> <goal>site</goal> </goals> 
+						<phase>site</phase> </execution> </executions> </plugin -->
 					<plugin>
 						<groupId>org.codehaus.mojo</groupId>
 						<artifactId>appassembler-maven-plugin</artifactId>
@@ -159,4 +144,16 @@
 			</build>
 		</profile>
 	</profiles>
+	<distributionManagement>
+		<repository>
+			<id>nexus-releases</id>
+			<name>Nexus Release Repository</name>
+			<url>http://10.35.62.222:8081/nexus/content/repositories/releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>nexus-snapshots</id>
+			<name>Nexus Snapshot Repository</name>
+			<url>http://10.35.62.222:8081/nexus/content/repositories/snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
 </project>
