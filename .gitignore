@@ -12,3 +12,4 @@ release.properties
 target/
 logs/
 test-output/
+feed-dist/
