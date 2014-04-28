@@ -10,6 +10,8 @@ public class Main {
         } else {
             System.out.println("Hello maven");
             //1
+            //2
+            System.out.println();
         }
     }
 
