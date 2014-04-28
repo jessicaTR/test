@@ -6,13 +6,13 @@
 
 	<groupId>com.pointcarbon</groupId>
 	<artifactId>esb-app-example</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Esb :: App :: Example</name>
 
-	<properties>
+	<!-- properties>
 		<github.global.server>github</github.global.server>
-	</properties>
+	</properties-->
 	<scm>
 		<developerConnection>scm:git:ssh://git@github.com/wangxiaoming2/test.git</developerConnection>
 		<connection>scm:git:ssh://git@github.com/wangxiaoming2/test.git</connection>
@@ -38,7 +38,7 @@
 			<id>release</id>
 			<build>
 				<plugins>
-					<plugin>
+					<!-- plugin>
 						<groupId>com.github.github</groupId>
 						<artifactId>site-maven-plugin</artifactId>
 						<version>0.8</version>
@@ -53,7 +53,7 @@
 								<phase>site</phase>
 							</execution>
 						</executions>
-					</plugin>
+					</plugin-->
 					<plugin>
 						<groupId>org.codehaus.mojo</groupId>
 						<artifactId>appassembler-maven-plugin</artifactId>
