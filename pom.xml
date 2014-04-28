@@ -6,16 +6,23 @@
 
 	<groupId>com.pointcarbon</groupId>
 	<artifactId>esb-app-example</artifactId>
-	<version>1.0.1</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>Esb :: App :: Example</name>
 
 	<!-- properties>
 		<github.global.server>github</github.global.server>
 	</properties-->
-	<scm>
+	<!-- scm>
 		<developerConnection>scm:git:ssh://git@github.com/wangxiaoming2/test.git</developerConnection>
 		<connection>scm:git:ssh://git@github.com/wangxiaoming2/test.git</connection>
+		<url>https://github.com/wangxiaoming2/test.git</url>
+		<tag>esb-app-example-1.0.1</tag>
+	</scm-->
+	
+	<scm>
+		<developerConnection>scm:git:https://github.com/wangxiaoming2/test.git</developerConnection>
+		<connection>scm:git:https://github.com/wangxiaoming2/test.git</connection>
 		<url>https://github.com/wangxiaoming2/test.git</url>
 		<tag>esb-app-example-1.0.1</tag>
 	</scm>
