@@ -4,12 +4,12 @@
 	<artifactId>ExportJobController</artifactId>
 	<packaging>jar</packaging>
 	<name>feeds ExportJobController</name>
-	<version>01.00.00</version>
+	<version>01.00.00-SNAPSHOT</version>
 
 	<parent>
 		<groupId>com.thomsonreuters.ce</groupId>
 		<artifactId>ExportTask</artifactId>
-		<version>01.00.00</version>
+		<version>01.00.00-SNAPSHOT</version>
 	</parent>
 
 </project>
