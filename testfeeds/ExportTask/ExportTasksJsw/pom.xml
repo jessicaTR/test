@@ -3,7 +3,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>ExportTasks</artifactId>
 	<name>feeds ExportTasks</name>
-	<version>01.00.02</version>
+	<version>01.00.03-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<parent>
