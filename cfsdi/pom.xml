@@ -3,7 +3,7 @@
   <groupId>com.thomsonreuters.ce</groupId>
   <artifactId>cfsdi</artifactId>
   <name>cfsdi</name>
-  <version>01.00.00</version>
+  <version>01.00.00-SNAPSHOT</version>
   
   <parent>
 		<groupId>com.thomsonreuters.ce</groupId>

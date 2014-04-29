@@ -2,6 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.thomsonreuters.ce</groupId>
   <artifactId>oasdi</artifactId>
+  <version>01.00.00-SNAPSHOT</version>
   <name>oasdi</name>
   <parent>
 		<groupId>com.thomsonreuters.ce</groupId>

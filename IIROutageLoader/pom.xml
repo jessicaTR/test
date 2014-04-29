@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.thomsonreuters.ce</groupId>
   <artifactId>IIROutageLoader</artifactId>
-  <version>01.00.00</version>
+  <version>01.00.00-SNAPSHOT</version>
   <name>IIROutageLoader</name>
   <parent>
 		<groupId>com.thomsonreuters.ce</groupId>
