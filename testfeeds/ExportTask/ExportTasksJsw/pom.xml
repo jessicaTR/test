@@ -12,6 +12,10 @@
 		<version>01.00.00</version>
 	</parent>
 
+	<modules>
+		<module>../ExportJobController</module>
+
+	</modules>
 
 
 	<scm>
