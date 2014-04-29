@@ -4,12 +4,12 @@
 	<groupId>com.thomsonreuters.ce</groupId>
 	<artifactId>ExportTasks</artifactId>
 	<name>feeds ExportTasks</name>
-	<version>01.00.04-SNAPSHOT</version>
+	<version>01.00.04-snapshot</version>
 	<packaging>pom</packaging>
 
 	<parent>
 		<groupId>com.thomsonreuters.ce</groupId>
-		<artifactId>feeds</artifactId>
+		<artifactId>ExportTask</artifactId>
 		<version>01.00.00</version>
 	</parent>
 
