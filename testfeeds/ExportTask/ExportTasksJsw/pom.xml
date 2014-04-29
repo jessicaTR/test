@@ -9,7 +9,7 @@
 	<parent>
 		<groupId>com.thomsonreuters.ce</groupId>
 		<artifactId>ExportTask</artifactId>
-		<version>01.00.00-SNAPSHOT</version>
+		<version>01.00.00</version>
 	</parent>
 
 	<modules>
