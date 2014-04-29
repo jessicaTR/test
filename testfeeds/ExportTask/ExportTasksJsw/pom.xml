@@ -29,6 +29,14 @@
 		<tag>ExportTasks-01.00.00</tag>
 	</scm>
 	
+		<dependencies>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>common</artifactId>
+			<version>01.00.00</version>
+		</dependency>
+	</dependencies>
+	
 	<build>
 		<plugins>
 			<plugin>
