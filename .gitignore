@@ -1,15 +1,18 @@
+*.class
+*.bak
 .idea
 .classpath
 .project
 .settings
-*.iml
-*.log
-*.ipr
-*.iws
+*.out
 *.releaseBackup
 release.properties
-.DS_Store
+
+# Package Files #
+*.war
+*.ear
+
+# Folders
 target/
-logs/
-test-output/
 feed-dist/
+.metadata/
