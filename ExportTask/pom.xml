@@ -3,7 +3,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>ExportTask</artifactId>
-	<version>01.00.00</version>
+	<version>01.00.00-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<parent>
