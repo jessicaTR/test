@@ -14,11 +14,7 @@
 
 	<modules>
 		<module>../ExportJobController</module>
-		<module>../IIRExport</module>
-		<module>../emailExport</module>
-		<module>../GeneralCsvExport</module>
-		<module>../stationaryPoints</module>
-		<module>../vesselzoneexport</module>
+
 	</modules>
 
 	<scm>
