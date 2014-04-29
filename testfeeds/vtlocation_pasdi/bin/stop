@@ -1,0 +1,4 @@
+
+CLASSPATH=$COMMONLIB/dbor.jar
+
+java -cp $CLASSPATH com.thomsonreuters.ce.dbor.server.SrvCntlClient localhost 19000 vtlocation_pasdi true

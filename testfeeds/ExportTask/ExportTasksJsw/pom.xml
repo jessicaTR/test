@@ -1,15 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.thomsonreuters.ce</groupId>
 	<artifactId>ExportTasks</artifactId>
 	<name>feeds ExportTasks</name>
-	<version>01.00.05-SNAPSHOT</version>
+	<version>01.00.04-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<parent>
 		<groupId>com.thomsonreuters.ce</groupId>
-		<artifactId>ExportTask</artifactId>
-		<version>01.00.00</version>
+		<artifactId>feeds</artifactId>
+		<version>01.00.00-SNAPSHOT</version>
 	</parent>
 
 	<modules>
@@ -21,22 +22,74 @@
 		<module>../vesselzoneexport</module>
 	</modules>
 
-
 	<scm>
 		<developerConnection>scm:git:https://github.com/wangxiaoming2/test.git</developerConnection>
 		<connection>scm:git:https://github.com/wangxiaoming2/test.git</connection>
 		<url>https://github.com/wangxiaoming2/test.git</url>
 		<tag>ExportTasks-01.00.00</tag>
 	</scm>
-	
-		<dependencies>
+	<dependencies>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.13</version>
+		</dependency>
 		<dependency>
 			<groupId>com.thomsonreuters.ce</groupId>
 			<artifactId>common</artifactId>
 			<version>01.00.00</version>
 		</dependency>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>dbor</artifactId>
+			<version>01.00.00</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>ExportJobController</artifactId>
+			<version>01.00.00</version>
+		</dependency>
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc7</artifactId>
+			<version>11.2.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>emailConfig</artifactId>
+			<version>01.00.00</version>
+		</dependency>
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ucp</artifactId>
+			<version>11.2.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>SpatialSDI</artifactId>
+			<version>01.00.00</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>GeneralCsvExport</artifactId>
+			<version>01.00.00</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>IIRExport</artifactId>
+			<version>01.00.00</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>stationaryPoints</artifactId>
+			<version>01.00.00</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>vesselzoneexport</artifactId>
+			<version>01.00.00</version>
+		</dependency>
 	</dependencies>
-	
 	<build>
 		<plugins>
 			<plugin>

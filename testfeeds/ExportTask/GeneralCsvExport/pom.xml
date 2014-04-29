@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>GeneralCsvExport</artifactId>
-	<version>01.00.00</version>
+	<version>01.00.00-SNAPSHOT</version>
 	<packaging>jar</packaging>
 	<name>feeds GeneralCsvExport</name>
 
@@ -12,4 +12,60 @@
 		<version>01.00.00</version>
 	</parent>
 
+	<properties>
+		<dist>${project.parent.parent.basedir}/feed-dist/${project.parent.parent.artifactId}-${project.parent.parent.version}/${project.parent.artifactId}-${project.parent.version}</dist>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.13</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>common</artifactId>
+			<version>01.00.00</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>dbor</artifactId>
+			<version>01.00.00</version>
+		</dependency>
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc7</artifactId>
+			<version>11.2.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>ExportJobController</artifactId>
+			<version>01.00.00</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>emailConfig</artifactId>
+			<version>01.00.00</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								<copy failonerror="false" file="${project.build.directory}/${project.artifactId}-${project.version}.jar" tofile="${dist}/lib/${jarname}" />
+							</tasks>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>

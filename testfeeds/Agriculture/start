@@ -1,0 +1,3 @@
+CLASSPATH="/local/commonlib/log4j-1.2.13.jar:/local/commonlib/common.jar:/local/commonlib/dbor.jar:/local/commonlib/opencsv.jar:../lib/agriculture.jar"
+
+nohup java -cp $CLASSPATH -DFILEMOVERTRACE=$FILEMOVERTRACE -DFTP=$FTP com.thomsonreuters.ce.agriculture.Starter localhost 19000 &

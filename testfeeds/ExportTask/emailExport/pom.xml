@@ -6,10 +6,51 @@
 	<packaging>jar</packaging>
 	<name>feeds emailExport</name>
 
+	<properties>
+		<dist>${project.parent.parent.basedir}/feed-dist/${project.parent.parent.artifactId}-${project.parent.parent.version}/${project.parent.artifactId}-${project.parent.version}</dist>
+	</properties>
+
 	<parent>
 		<groupId>com.thomsonreuters.ce</groupId>
 		<artifactId>ExportTask</artifactId>
-		<version>01.00.00</version>
+		<version>01.00.00-SNAPSHOT</version>
 	</parent>
 
+	<dependencies>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.13</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>common</artifactId>
+			<version>01.00.00</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>ExportJobController</artifactId>
+			<version>01.00.00</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								<copy failonerror="false" file="${project.build.directory}/${project.artifactId}-${project.version}.jar" tofile="${dist}/lib/${jarname}" />
+							</tasks>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>

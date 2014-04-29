@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.thomsonreuters.ce</groupId>
+	<artifactId>LanworthLoader</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>jar</packaging>
+	<name>lanworth</name>
+
+	<properties>
+		<dist>${project.parent.parent.basedir}/feed-dist/${project.parent.parent.artifactId}-${project.parent.parent.version}/${project.parent.artifactId}-${project.parent.version}</dist>
+	</properties>
+
+
+	<parent>
+		<groupId>com.thomsonreuters.ce</groupId>
+		<artifactId>feeds</artifactId>
+		<version>1.0-SNAPSHOT</version>
+	</parent>
+
+	<dependencies>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.13</version>
+		</dependency>
+		<dependency>
+			<groupId>classes12</groupId>
+			<artifactId>classes12</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>common</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>dbor</artifactId>
+			<version>1.0-SNAPSHOT</version>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>install</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${dist}/lib</outputDirectory>
+							<overWriteReleases>false</overWriteReleases>
+							<overWriteSnapshots>false</overWriteSnapshots>
+							<overWriteIfNewer>true</overWriteIfNewer>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								<delete failonerror="false" dir="${dist}" />
+								<copy failonerror="false"
+									file="${project.build.directory}/${project.artifactId}-${project.version}.jar"
+									tofile="${dist}/${project.artifactId}-${project.version}.jar" />
+								<copy failonerror="false" todir="${dist}">
+									<fileset dir="${basedir}/src/main/resources" />
+								</copy>
+								<copy failonerror="false" todir="${dist}/taskcontroller">
+									<fileset dir="${basedir}/taskcontroller" />
+								</copy>
+								<copy failonerror="false" todir="${dist}/cfg">
+									<fileset dir="${basedir}/cfg" />
+								</copy>
+								<copy failonerror="false" todir="${dist}/../bin">
+									<fileset dir="${basedir}/../bin" />
+								</copy>
+							</tasks>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

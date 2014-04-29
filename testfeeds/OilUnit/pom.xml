@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.thomsonreuters.ce</groupId>
+	<artifactId>OilUnit</artifactId>
+	<version>01.00.00</version>
+	<packaging>jar</packaging>
+	<name>OilUnit</name>
+	<parent>
+		<groupId>com.thomsonreuters.ce</groupId>
+		<artifactId>feeds</artifactId>
+		<version>01.00.00</version>
+	</parent>
+	<properties>
+		<dist>${project.parent.basedir}/feed-dist/${project.parent.artifactId}-${project.parent.version}/${project.artifactId}</dist>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>1.2.13</version>
+		</dependency>
+		<dependency>
+			<groupId>opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+			<version>1.0</version>
+		</dependency>
+		<dependency>
+		  <groupId>com.oracle</groupId>
+		  <artifactId>ucp</artifactId>
+		  <version>11.2.0.3</version>
+		</dependency>
+		<dependency>
+		  <groupId>com.oracle</groupId>
+		  <artifactId>ojdbc7</artifactId>
+		  <version>11.2.0.3</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>common</artifactId>
+			<version>01.00.00</version>
+		</dependency>
+		<dependency>
+			<groupId>com.thomsonreuters.ce</groupId>
+			<artifactId>dbor</artifactId>
+			<version>01.00.00</version>
+		</dependency>
+	</dependencies>
+	  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      
+      <plugin>
+				<artifactId>maven-antrun-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>package</phase>
+						<goals>
+							<goal>run</goal>
+						</goals>
+						<configuration>
+							<tasks>
+								<copy failonerror="false"
+									file="${project.build.directory}/${project.artifactId}-${project.version}.jar"
+									tofile="${dist}/lib/${project.artifactId}.jar" />
+							</tasks>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+    </plugins>
+  </build>
+</project>

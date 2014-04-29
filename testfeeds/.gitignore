@@ -1,0 +1,18 @@
+*.class
+*.bak
+.idea
+.classpath
+.project
+.settings
+*.out
+*.releaseBackup
+release.properties
+
+# Package Files #
+*.war
+*.ear
+
+# Folders
+target/
+feed-dist/
+.metadata/

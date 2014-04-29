@@ -1,0 +1,3 @@
+CLASSPATH=$COMMONLIB/ojdbc7.jar:$COMMONLIB/ucp.jar:$COMMONLIB/trmessaging.jar:$COMMONLIB/vecmath-1.3.2.jar:$COMMONLIB/opencsv.jar:$COMMONLIB/jts-1.13.jar:$COMMONLIB/jsr-275-1.0-beta-2.jar:$COMMONLIB/jsch-0.1.49.jar:$COMMONLIB/hsqldb-1.8.0.7.jar:$COMMONLIB/gt-referencing-9.3.jar:$COMMONLIB/gt-opengis-9.3.jar:$COMMONLIB/gt-metadata-9.3.jar:$COMMONLIB/gt-main-9.3.jar:$COMMONLIB/gt-epsg-hsql-9.3.jar:$COMMONLIB/gt-api-9.3.jar:$COMMONLIB/log4j-1.2.13.jar:$COMMONLIB/common.jar:$COMMONLIB/dbor.jar:../lib/vtlocation_pasd.jar
+
+nohup java -cp $CLASSPATH -DAPPTRACE=$APPTRACE -DAPPTEMP=$APPTEMP -DFEEDSIN=$FEEDSIN -DFEEDSOUT=$FEEDSOUT -Duser.timezone=GMT com.thomsonreuters.ce.dbor.vessel.location.Starter localhost 19000 &
