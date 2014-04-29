@@ -12,10 +12,7 @@
 		<version>01.00.00</version>
 	</parent>
 
-	<modules>
-		<module>../ExportJobController</module>
 
-	</modules>
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/thomsonreuters/dbor_nda_applications.git</developerConnection>
