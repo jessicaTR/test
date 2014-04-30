@@ -28,6 +28,7 @@
 		<module>SpatialSDI</module>
 		<module>oasdi</module>
 		<module>purgevessellocation</module>
+		<module>filemover</module>
 	</modules>
 
 	<properties>
