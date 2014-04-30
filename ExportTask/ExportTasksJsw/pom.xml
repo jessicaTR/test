@@ -7,12 +7,6 @@
 	<version>01.01.03-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<parent>
-		<groupId>com.thomsonreuters.ce</groupId>
-		<artifactId>ExportTask</artifactId>
-		<version>01.00.00</version>
-	</parent>
-
 	<modules>
 		<module>../ExportJobController</module>
 		<module>../IIRExport</module>
