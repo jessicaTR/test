@@ -4,7 +4,7 @@
 	<groupId>com.thomsonreuters.ce</groupId>
 	<artifactId>ExportTasks</artifactId>
 	<name>feeds ExportTasks</name>
-	<version>01.00.20-SNAPSHOT</version>
+	<version>01.00.20</version>
 	<packaging>pom</packaging>
 
 	<parent>
@@ -102,8 +102,6 @@
 			</plugin>
 		</plugins>
 	</build>
-
-
 	<profiles>
 		<profile>
 			<id>release</id>
@@ -235,7 +233,6 @@
 				</plugins>
 			</build>
 		</profile>
-
 		<profile>
 			<id>integration-tests</id>
 			<activation>
