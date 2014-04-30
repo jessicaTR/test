@@ -8,31 +8,6 @@
 	<version>01.00.00-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
-	<modules>
-		<module>common</module>
-		<module>dbor</module>
-		<module>ExportTask</module>
-		<module>Agriculture</module>
-		<module>ChinaDataImportExport</module>
-		<module>fixture</module>
-		<module>IIROutageLoader</module>
-		<module>KmlLoader</module>
-		<module>LanworthLoader</module>
-		<module>MPDLoader</module>
-		<module>OilUnit</module>
-		<module>piers</module>
-		<module>Platts</module>
-		<module>PowerUnit</module>
-		<module>presentationmetadata</module>
-		<module>reportmetadata</module>
-		<module>SpatialSDI</module>
-		<module>oasdi</module>
-		<module>purgevessellocation</module>
-		<module>filemover</module>
-		<module>cfsdi</module>
-		<module>vtlocation_pasdi</module>
-		<module>vtvessel</module>
-	</modules>
 
 	<properties>
 		<dist>${project.basedir}/feed-dist/${project.artifactId}-${project.version}</dist>
