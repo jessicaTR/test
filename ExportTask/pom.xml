@@ -144,7 +144,7 @@
 						</executions>
 						<configuration>
 							<descriptors>
-								<descriptor>assembly/standalone.xml</descriptor>
+								<descriptor>ExportTasksJsw/assembly/standalone.xml</descriptor>
 							</descriptors>
 							<tarLongFileMode>gnu</tarLongFileMode>
 						</configuration>
