@@ -173,7 +173,7 @@
 						</executions>
 						<configuration>
 							<descriptors>
-								<descriptor>ExportTasksJsw/assembly/standalone.xml</descriptor>
+								<descriptor>assembly/standalone.xml</descriptor>
 							</descriptors>
 							<tarLongFileMode>gnu</tarLongFileMode>
 						</configuration>
