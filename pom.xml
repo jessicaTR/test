@@ -31,7 +31,7 @@
 		<module>filemover</module>
 		<module>cfsdi</module>
 		<module>vtlocation_pasdi</module>
-		<module>vtvessel</module>
+
 	</modules>
 
 	<properties>
