@@ -8,6 +8,10 @@
 	<version>01.00.00-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
+	<modules>
+		<module>ExportTask</module>
+	</modules>
+
 	<properties>
 		<dist>${project.basedir}/feed-dist/${project.artifactId}-${project.version}</dist>
 		<jarname>${project.artifactId}.jar</jarname>
