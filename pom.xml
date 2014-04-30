@@ -9,6 +9,8 @@
 	<packaging>pom</packaging>
 
 	<modules>
+		<module>common</module>
+		<module>dbor</module>
 		<module>ExportTask</module>
 	</modules>
 
