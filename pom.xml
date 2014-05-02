@@ -17,6 +17,17 @@
 		<FEEDSIN>/dsdata/feedsin</FEEDSIN>
 	</properties>
 
+		<scm>
+		<developerConnection>scm:git:https://github.com/wangxiaoming2/test.git</developerConnection>
+		<connection>scm:git:https://github.com/wangxiaoming2/test.git</connection>
+		<url>https://github.com/wangxiaoming2/test.git</url>
+		<tag>ExportTasks-01.00.00</tag>
+	</scm>
+	
+		<modules>
+		<module>ExportTask</module>
+	</modules>
+	
 	<build>
 		<plugins>
 			<plugin>
