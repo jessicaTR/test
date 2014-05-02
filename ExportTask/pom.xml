@@ -8,7 +8,7 @@
 	<parent>
 		<groupId>com.thomsonreuters.ce</groupId>
 		<artifactId>feeds</artifactId>
-		<version>01.00.06-SNAPSHOT</version>
+		<version>01.00.06</version>
 	</parent>
 	
 	<modules>
