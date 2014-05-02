@@ -20,11 +20,11 @@
 		<developerConnection>scm:git:https://github.com/wangxiaoming2/test.git</developerConnection>
 		<connection>scm:git:https://github.com/wangxiaoming2/test.git</connection>
 		<url>https://github.com/wangxiaoming2/test.git</url>
-		<tag>ExportTasks-01.00.00</tag>
+		<tag>feeds-01.00.00</tag>
 	</scm>
 	
 		<modules>
-		<module>ExportTask</module>
+		<module>ExportTasks</module>
 	</modules>
 	
 	<build>
