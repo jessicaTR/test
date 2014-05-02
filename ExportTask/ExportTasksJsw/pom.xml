@@ -4,7 +4,7 @@
 	<groupId>com.thomsonreuters.ce</groupId>
 	<artifactId>ExportTasks</artifactId>
 	<name>feeds ExportTasks</name>
-	<version>01.01.23-SNAPSHOT</version>
+	<version>01.01.23</version>
 	<packaging>pom</packaging>
 
 	<modules>
