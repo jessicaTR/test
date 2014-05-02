@@ -13,12 +13,7 @@
 	</parent>
 	
 	<modules>
-		<module>ExportJobController</module>
-		<module>IIRExport</module>
-		<module>emailExport</module>
-		<module>GeneralCsvExport</module>
-		<module>stationaryPoints</module>
-		<module>vesselzoneexport</module>
+		<module>ExportTasksJsw</module>
 	</modules>
 	
 </project>
