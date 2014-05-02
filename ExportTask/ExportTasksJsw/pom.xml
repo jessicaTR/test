@@ -75,26 +75,6 @@
 			<version>01.00.00</version>
 		</dependency>
 	</dependencies>
-	<build>
-		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>2.3</version>
-				<configuration>
-					<goals>deploy</goals>
-					<arguments>-Prelease</arguments>
-				</configuration>
-				 	<dependencies>
- 	<dependency>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
-				<version>2.3</version>
- 	</dependency>
- 	</dependencies>
-			</plugin>
-		</plugins>
-	</build>
 	
 	<profiles>
 		<profile>
