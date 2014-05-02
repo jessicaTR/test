@@ -7,15 +7,6 @@
 	<version>01.01.25</version>
 	<packaging>pom</packaging>
 
-	<modules>
-		<module>../ExportJobController</module>
-		<module>../IIRExport</module>
-		<module>../emailExport</module>
-		<module>../GeneralCsvExport</module>
-		<module>../stationaryPoints</module>
-		<module>../vesselzoneexport</module>
-	</modules>
-
 	<parent>
 		<groupId>com.thomsonreuters.ce</groupId>
 		<artifactId>ExportTask</artifactId>
