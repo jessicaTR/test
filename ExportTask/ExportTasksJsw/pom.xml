@@ -223,4 +223,8 @@
 		</profile>
 	</profiles>
 
+
+  <scm>
+    <tag>feeds-01.00.04</tag>
+  </scm>
 </project>

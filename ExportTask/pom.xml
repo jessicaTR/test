@@ -1,19 +1,22 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>ExportTask</artifactId>
-	<version>01.00.00-SNAPSHOT</version>
+	<version>01.00.00</version>
 	<packaging>pom</packaging>
 
 	<parent>
 		<groupId>com.thomsonreuters.ce</groupId>
 		<artifactId>feeds</artifactId>
-		<version>01.00.00</version>
+		<version>01.00.04</version>
 	</parent>
 	
 	<modules>
 		<module>ExportTasksJsw</module>
 	</modules>
 	
+
+  <scm>
+    <tag>feeds-01.00.04</tag>
+  </scm>
 </project>

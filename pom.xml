@@ -4,7 +4,7 @@
 
 	<groupId>com.thomsonreuters.ce</groupId>
 	<artifactId>feeds</artifactId>
-	<version>01.00.04-SNAPSHOT</version>
+	<version>01.00.04</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -20,7 +20,7 @@
 		<developerConnection>scm:git:https://github.com/wangxiaoming2/test.git</developerConnection>
 		<connection>scm:git:https://github.com/wangxiaoming2/test.git</connection>
 		<url>https://github.com/wangxiaoming2/test.git</url>
-		<tag>feeds-01.00.00</tag>
+		<tag>feeds-01.00.04</tag>
 	</scm>
 	
 		<modules>
