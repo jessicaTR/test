@@ -17,9 +17,9 @@
 	</properties>
 
 		<scm>
-		<developerConnection>scm:git:https://github.com/wangxiaoming2/test/tree/master</developerConnection>
-		<connection>scm:git:https://github.com/wangxiaoming2/test/tree/master</connection>
-		<url>https://github.com/wangxiaoming2/test/tree/master</url>
+		<developerConnection>scm:git:https://github.com/wangxiaoming2/test.git</developerConnection>
+		<connection>scm:git:https://github.com/wangxiaoming2/test.git</connection>
+		<url>https://github.com/wangxiaoming2/test.git</url>
 		<tag>ExportTasks-01.00.00</tag>
 	</scm>
 	
