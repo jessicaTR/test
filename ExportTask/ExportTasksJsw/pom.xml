@@ -10,7 +10,7 @@
 	<parent>
 		<groupId>com.thomsonreuters.ce</groupId>
 		<artifactId>ExportTask</artifactId>
-		<version>01.00.02</version>
+		<version>01.00.00</version>
 	</parent>
 	
 	<dependencies>
