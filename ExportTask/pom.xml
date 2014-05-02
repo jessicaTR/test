@@ -2,21 +2,16 @@
 
 	<modelVersion>4.0.0</modelVersion>
 	<artifactId>ExportTask</artifactId>
-	<version>01.00.00</version>
+	<version>01.00.01-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<parent>
 		<groupId>com.thomsonreuters.ce</groupId>
 		<artifactId>feeds</artifactId>
-		<version>01.00.04</version>
+		<version>01.00.05-SNAPSHOT</version>
 	</parent>
 	
 	<modules>
 		<module>ExportTasksJsw</module>
 	</modules>
-	
-
-  <scm>
-    <tag>feeds-01.00.04</tag>
-  </scm>
 </project>
