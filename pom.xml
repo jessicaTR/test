@@ -4,7 +4,7 @@
 
 	<groupId>com.thomsonreuters.ce</groupId>
 	<artifactId>feeds</artifactId>
-	<version>01.00.03</version>
+	<version>01.00.03-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
